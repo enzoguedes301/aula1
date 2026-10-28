@@ -1,0 +1,20 @@
+/*
+ * Reset mínimo. O painel traz a PRÓPRIA paleta e tipografia num bloco de estilo
+ * preso ao escopo `.adm` (dentro de PainelAdmin.tsx) — por isso aqui não há
+ * Tailwind nem tokens de tema. Só garantimos caixa consistente e um fundo
+ * escuro para não piscar branco antes de o React montar.
+ */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0b1220;
+  -webkit-font-smoothing: antialiased;
+}

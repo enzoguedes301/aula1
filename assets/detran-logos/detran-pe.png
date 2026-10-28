@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8">
+	<meta name="author" content="Super User">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="description" content="Departamento Estadual de Trânsito de Pernambuco - DETRAN-PE">
+	<title>Ooops... Página não encontrada! - DETRAN-PE</title>
+	<link href="/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+<link href="/templates/detranpe/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/templates/detranpe/assets/css/all.min.css" rel="stylesheet">
+	<link href="/templates/detranpe/assets/css/normalize.css" rel="stylesheet">
+	<link href="/templates/detranpe/assets/css/_main.css" rel="stylesheet">
+	<link href="/templates/detranpe/assets/css/hotsites.css" rel="stylesheet">
+<script type="application/json" class="joomla-script-options new">{"system.paths":{"root":"","rootFull":"https:\/\/www.detran.pe.gov.br\/","base":"","baseFull":"https:\/\/www.detran.pe.gov.br\/"},"csrf.token":"3e5a577c95cdaca35b836183c73c3eca"}</script>
+	<script src="/media/system/js/core.min.js?a3d8f8"></script>
+
+
+    <meta property="og:title" content="DETRAN-PE" />
+    <meta property="og:site_name" content="DETRAN-PE" />
+    <meta property="og:url" content="https://www.detran.pe.gov.br/" />
+    <meta property="og:description" content="Departamento Estadual de Trânsito de Pernambuco - DETRAN-PE" />
+    <meta name="google-site-verification" content="MLCSgXwq0wd4cbK3tdN-cPhEmjun43bJWY2nkSv4WRQ" />
+	<meta name="robots" content="index, follow" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+
+    <!-- LeafLet Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="192x192" />
+	<link rel="shortcut icon" href="/favicon.png" type="image/png" />
+</head>
+<body>
+    <noscript>
+        <div class="noscript alert alert-danger">
+          <p>A execução de scripts está desabilitada. Ative para uma melhor experiência.</p>
+  		</div>
+    </noscript>
+    <header>
+        <div class="container-fluid container">
+            <div class="top">
+              	<nav class="detran-skip-menu" role="navigation" aria-label="Acesso rápido">
+              		<a href="#main-conteudo" accesskey="1" tabindex="0" aria-current="false" aria-label="ir para área de conteúdo">CONTEÚDO <span class="access-key">1</span></a>
+                  	<a accesskey="2" href="#nav-main" tabindex="0" aria-current="false" aria-label="ir para área de navegação" >NAVEGAÇÃO <span class="access-key">2</span></a>
+                  	<a accesskey="3" href="#mod-finder-searchword125" tabindex="0" aria-current="false" aria-label="ir para área de busca" >BUSCA <span class="access-key">3</span></a>
+                  	<a accesskey="4" href="#footer" tabindex="0" aria-current="false" aria-label="ir para área de rodapé" >RODAPÉ <span class="access-key">4</span></a>
+                  	<a accesskey="5" href="/mapa-do-site" tabindex="0" aria-current="false" aria-label="ir para página de mapa do site">MAPA DO SITE <span class="access-key">5</span></a>
+              	</nav>
+              <div class="order-lg-0">
+                    <ul id="menu-acessibilidade">
+                        <li><span><a id="acessibilidade" href="/acessibilidade" aria-label="acessar página de Acessibilidade">Acessibilidade:</a></span></li>
+                        <li id="alto-constraste"><span><button class="menu-acess" aria-label="Alto contraste"><i class="fas fa-adjust"></i></button></span></li>
+                          <li>
+    <a class="sa sab" href="http://selodigital.imprensaoficial.com.br/validacao/SMPED/011fdfc06563efc9d4" target="_blank">
+        <img src="/images/cpa/sa2.svg" height="40" alt="Este sitio possui um selo de acessibilidade digital.">
+        <div class="st"><div>Selo de Acessibilidade Digital</div>Nº do Selo: 2025-SAD/001<br>Validade: 29/01/2027<br>Clique para mais informações
+        </div>
+    </a>
+    </li>
+                    </ul>
+</div>
+                <a href="https://www.pe.gov.br/" aria-label="acessar página do Governo do Estado de Pernambuco" title="Governo do Estado de Pernambuco" class="order-lg-1" target="_blank">
+                    
+                    <img src="/templates/detranpe/images/logo-govpe-branca.png" class="logope" alt="Governo do Estado de Pernambuco">
+                   
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="container-fluid container-lg">
+
+                <div class="nav-mobile d-flex align-items-center d-lg-none">
+
+                    <!-- Menu Hamburger -->
+                    <div class="hamburguer-menu">
+                        <button id='mobile-btn' class="btn menu-btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false" aria-label="clique para abrir menu principal">
+                        <i class="fas fa-bars icon-btn"></i>
+                        </button>
+
+                        <!--<label class="menu-btn" >
+                            <span></span>
+                            <p class="visually-hidden">Menu</p>
+                        </label>-->
+
+                        <ul class="dropdown-menu menu-box">
+                            <li>
+                                <a class="menu-item" aria-label="acessar página de veículos" href="/veiculos">
+                                    <img src="/templates/detranpe/images/veiculos.svg" role="presentation"> Veículos                                 </a>
+                            </li>
+                            <li>
+                                <a class="menu-item" aria-label="acessar página de habilitação" href="/habilitacao">
+                                    <img src="/templates/detranpe/images/habilitacao.svg" role="presentation"> Habilitação                                 </a>
+                            </li>
+                            <li>
+                                <!-- <a class="menu-item" href="/">
+                                    <img src="/templates/detranpe/images/institucional.svg" alt=" "  role="presentation">Institucional                                  </a> -->
+                                <div class="accordion" id="menu-mobile-accordion1">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" id="menu-institucional">
+                                            <button class="accordion-button collapsed collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstitucional" aria-expanded="false" aria-controls="collapseInstitucional">
+                                                <img src="/templates/detranpe/images/institucional.svg"   role="presentation"> Institucional
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                      <!-- Menu Mobile -->
+                                        <div id="collapseInstitucional" class="accordion-collapse collapse"  data-bs-parent="#menu-mobile-accordion1">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    <li><a aria-label="acessar página de Nosso Perfil" href="/institucional-detran/nosso-perfil">Nosso perfil</a></li>
+                                                    <li><a aria-label="acessar página de Estrutura Organizacional" href="/institucional-detran/estrutura-organizacional">Estrutura Organizacional</a></li>
+                                                    <li><a aria-label="acessar página de imprensa" href="/institucional-detran/imprensa">Imprensa</a></li>
+                                                    <li><a aria-label="acessar área da Ouvidoria do DETRAN-PE" href="/fale-conosco#ouvidoria">Ouvidoria</a></li>
+                                                    <li><a aria-label="acessar página de estatísticas" href="https://estatisticas.detran.pe.gov.br/">Estatísticas</a></li>
+<li><a aria-label="acessar página de lgpd" href="/institucional-detran/lgpd-detran-pe">LGPD DETRAN-PE</a></li>                                                    
+<li><a aria-label="acessar página de portal de transparência" href="/institucional-detran/portal-da-transparencia">Portal da transparência</a></li>
+                                                    <li><a aria-label="acessar página de pontos de atendimento" href="/institucional-detran/pontos-de-atendimento">Pontos de atendimento</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <!-- Novo Menu TRANSPARÊNCIA -->
+                            <li>
+                                <div class="accordion" id="menu-mobile-accordion2">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header collapse-btn" id="menu-transparencia">
+                                            <button class="accordion-button collapsed collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTransparencia" aria-expanded="false" aria-controls="collapseInstitucional">
+                                                <img src="/templates/detranpe/images/institucional.svg" alt=" "> Transparência
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div id="collapseTransparencia" class="accordion-collapse collapse"  data-bs-parent="#menu-mobile-accordion2">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    <li>
+                                                        <a role="link" href="/transparencia/area-principal-transparencia" aria-label="Acessar página de Estatísticas">Área principal transparência</a>
+                                                    </li>
+                                                    <li>
+                                                        <a role="link" href="/transparencia/informacoes-institucionais" aria-label="Acessar página de Estatísticas">Informações Institucionais</a>
+                                                    </li>
+                                                    <li>
+                                                        <a role="link" href="/transparencia/perguntas-frequentes" aria-label="Acessar página de Estatísticas">Perguntas Frequentes</a>
+                                                    </li>
+                                                    <li>
+                                                        <a role="link" href="/transparencia/responsabilidade-fiscal" aria-label="Acessar página de Estatísticas">Responsabilidade Fiscal</a>
+                                                    </li>
+                                                    <li>
+                                                        <a role="link" href="/transparencia/fiscalizacao-e-controle" aria-label="Acessar página de Estatísticas">Fiscalização e Controle</a>
+                                                    </li>
+                                                    <li>
+                                                        <a role="link" href="/transparencia/transferencias-estaduais-e-acordos" aria-label="Acessar página de Estatísticas">Transferências Estaduais e Acordos</a>
+                                                    </li>
+                                                    <li>
+                                                        <a role="link" href="/transparencia/receitas-transferencias-da-uniao-divida-ativa-e-renuncia-de-receita" aria-label="Acessar página de Estatísticas">Receitas, Transferências da União, Dívida Ativa e Renúncia de Receita</a>
+                                                    </li>
+                                                    <li>
+                                                        <a role="link" href="/transparencia/despesa" aria-label="Acessar página de Estatísticas">Despesa</a>
+                                                    </li>
+                                                    <li>
+                                                        <a role="link" href="/transparencia/licitacoes-contratos-e-fornecedores" aria-label="Acessar página de Estatísticas">Licitações, Contratos e Fornecedores</a>
+                                                    </li>
+                                                    <li>
+                                                        <a role="link" href="/transparencia/obras-publicas" aria-label="Acessar página de Estatísticas">Obras Públicas</a>
+                                                    </li>
+                                                    <li>
+                                                        <a role="link" href="/transparencia/patrimonio-publico" aria-label="Acessar página de Estatísticas">Patrimônio Público</a>
+                                                    </li>
+                                                    <li>
+                                                        <a role="link" href="/transparencia/recursos-humanos" aria-label="Acessar página de Estatísticas">Recursos Humanos</a>
+                                                    </li>
+                                                    <li>
+                                                        <a role="link" href="/transparencia/servico-de-informacao-ao-cidadao-sic" aria-label="Acessar página de Estatísticas">Serviço de Informação ao Cidadão – SIC</a>
+                                                    </li>
+                                                    <li>
+                                                        <a role="link" href="/transparencia/mapa-de-contratos-detran-pe" aria-label="Acessar página de Estatísticas">Mapa de Contratos – DETRAN-PE</a>
+                                                    </li>
+                                                    <li>
+                                                        <a role="link" href="/transparencia/mapa-de-contratos-de-terceirizados-detran-pe" aria-label="Acessar página de Estatísticas">Mapa de Contratos de Terceirizados – DETRAN-PE</a>
+                                                    </li>
+                                                    <li>
+                                                        <a role="link" href="/transparencia/mapa-de-diarias-e-passagens-detran-pe" aria-label="Acessar página de Estatísticas" aria-current="page">Mapa de Diárias e Passagens – DETRAN-PE</a>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="accordion" id="menu-mobile-accordion3">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header collapse-btn" id="menu-sempre-alerta">
+                                            <button class="accordion-button collapsed collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuSempreAlerta" aria-expanded="false" aria-controls="collapseMenuSempreAlerta">
+                                                <img src="/templates/detranpe/images/sempreAlerta.svg"   role="presentation">Sempre Alerta 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div id="collapseMenuSempreAlerta" class="accordion-collapse collapse" data-bs-parent="#menu-mobile-accordion3">
+                                            <div class="accordion-body">
+                                                <div class="alert-cards">
+                                                    <div class="alert-card">
+                                                        <div class="tit-card">
+                                                            
+                                                                <div class="d-flex justify-content-start align-items-center">
+                                                                    <i class="fas fa-book"></i>
+                                                                    <span>Educação</span>
+                                                                </div>
+                                                            
+
+                                                        </div>
+                                                        <div class="alert-infos">
+                                                            
+                                                                <img src="/templates/detranpe/images/img-alert-01.png"  role="presentation">
+                                                        
+                                                            <span><a aria-label="acessar página de educação" class="txt-blue" href="/sempre-alerta-detran/educacao">Conheça a área de Educação</a></span>
+                                                            <ul>
+                                                                <li><a href="https://online8.detran.pe.gov.br/ServicosWeb/EPT/">Prêmio DETRAN-PE de Educação para o Trânsito</a></li><li><a href="https://online7.detran.pe.gov.br/Habilitacao/ProvaEletronica">Simulado Eletrônico para Prova Teórica</a></li><li><a href="/sempre-alerta-detran/educacao#materialPedagogico">Capacitações E Materiais Pedagógicos</a></li><li><a href="/sempre-alerta/316-educacao/1890-entidades-credenciadas-para-educacao-de-transito">Entidades Credenciadas para Educação de Trânsito</a></li><li><a href="/educacao/informacoes-gerais/cfcs-em-destaque">CFCs Em Destaque</a></li><li><a href="/sempre-alerta/316-educacao/1888-manuais">Manuais importantes</a></li>                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="alert-card card-green">
+                                                        <div class="tit-card">
+                                                           
+                                                                <div class="d-flex justify-content-start align-items-center">
+                                                                    <i class="fas fa-chalkboard-teacher"></i>
+                                                                    <span>Cursos</span>
+                                                                </div>
+                                                            
+                                                        </div>
+                                                        <div class="alert-infos">
+                                                          
+                                                                <img src="/templates/detranpe/images/img-alert-03.png"  role="presentation">
+                                                           
+                                                            <span><a aria-label="acessar página de cursos" class="txt-green" href="/sempre-alerta-detran/cursos">Conheça a área de Cursos</a></span>
+                                                            <ul>
+                                                                <li><a href="/curso-superando-o-temor-de-dirigir">Curso Superando Temor de Dirigir</a></li><li><a href="/curso-de-pilotagem-defensiva-recife">Pilotagem Defensiva</a></li><li><a href="/curso-mecanica-basica-iniciantes">Mecânica Básica para Iniciantes</a></li><li><a href="/curso-preventivo-de-reciclagem">Curso Preventivo de Reciclagem</a></li><li><a href="/educacao/informacoes-cursos/cursos-especializados-para-atividade-remunerada">Cursos para Atividade Remunerada</a></li><li><a href="/curso-nocoes-de-primeiros-socorros">Noções de Primeiros Socorros</a></li>                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="alert-card card-black">
+                                                        <div class="tit-card">
+                                                         
+                                                                <div class="d-flex justify-content-start align-items-center">
+                                                                    <i class="fas fa-shield-alt"></i>
+                                                                    <span class="text-dark">Fiscalização</span>
+                                                                </div>
+                                                           
+
+                                                        </div>
+                                                        <div class="alert-infos">
+                                                          
+                                                                <img src="/templates/detranpe/images/img-alert-02.png"  role="presentation">
+                                                           
+                                                            <span><a aria-label="acessar página de fiscalização" class="text-dark" href="/sempre-alerta-detran/fiscalizacao">Conheça a área de Fiscalização</a></span>
+                                                            <ul>
+                                                                <li><a href="/defesa-e-recurso">Defesa/Recurso</a></li><li><a href="/transferencia-de-pontos-da-cnh">Identificação de condutor Infrator</a></li><li><a href="/veiculos-recolhidos-e-leilao">Veículos Recolhidos</a></li><li><a href="/liberacao-de-documentos-recolhidos">Liberação de Documentos Recolhidos</a></li><li><a href="/sempre-alerta-detran/fiscalizacao">Leilões</a></li><li><a href="/cnh-suspensa-ou-cassada">CNH Suspensa ou Cassada</a></li>                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="alert-card card-red">
+                                                        <div class="tit-card">
+                                                           
+                                                                <div class="d-flex justify-content-start align-items-center">
+                                                                    <i class="fas fa-clinic-medical"></i>
+                                                                    <span>Área médica</span>
+                                                                </div>
+                                                         
+                                                        </div>
+                                                        <div class="alert-infos">
+                                                          
+                                                                <img src="/templates/detranpe/images/img-alert-04-1.png"   role="presentation">
+                                                           
+                                                            <span><a aria-label="acessar página de área médica" class="txt-redStrong" href="/sempre-alerta-detran/area-medica">Conheça a Área Médica</a></span>
+                                                            <ul>
+                                                                <li><a href="/isencao-para-condutor-pessoa-com-deficiencia">Isenção para Condutor</a></li><li><a href="/duvidas-habilitacao/exame-toxicologico">Exame Toxicológico</a></li><li><a href="/exames-psico-medicos">Exames Psicomédicos</a></li><li><a href="/isencao-para-nao-condutor-pessoa-com-deficiencia">Isenção para não Condutor</a></li><li><a href="/atendimento/atendimento-geral/credenciados/543-medicos-e-psicologos">Lista de Médicos e Psicólogos Credenciados</a></li><li><a href="/consulta-de-resultado-de-exames-psicomedicos">Consulta Resultado Exames</a></li>                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- <li>
+                                <a class="menu-item" href="/">
+                                    <img src="/templates/detranpe/images/sempreAlerta.svg" alt="">Sempre Alerta                                </a>
+                            </li> -->
+                            <li>
+                                <a aria-label="acessar página do Fale Conosco" class="menu-item" href="/fale-conosco">
+                                    <img src="/templates/detranpe/images/duvidas.svg"  role="presentation">Fale Conosco
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="/" class="navbar-brand ">
+                        <img src="/templates/detranpe/images/logo-detranpe.png" class="img-fluid w-custom" alt="DETRAN-PE">
+                    </a>
+
+                    <a aria-label="acessar página do Portal de Serviços - versão Mobile" data-dt-link="true" data-dt-href="133" class="dt-pessoal-mobile">
+                        <img src="/templates/detranpe/images/user.svg" alt="Portal de Serviços - versão mobile">
+                        <div class="tooltip-dt-pessoal-mobile">
+                            <span>Acesse o</span>
+                            <span>Portal de Serviços</span>
+                        </div>
+                    </a>
+
+                    <div class="container-search">
+                        <button class="icon-search flex-grow-12">
+                            <i class="fas fa-search"></i>
+                            <div class="visually-hidden">ícone de busca recolhido</div>
+                        </button>
+
+                        <div class="search">
+                            <button  id='arrow-searchbar'class="hide-search">
+                                <i class="fas fa-arrow-left"></i>
+                                <div class="visually-hidden">ícone fechar busca</div>
+                            </button>
+                            <div class="container-form">
+
+                                <form class="mod-finder js-finder-searchform form-search" action="/component/finder/search?Itemid=101" method="get" role="search">
+                                    <label class="visually-hidden" for="mod-finder-searchword124">Buscar</label>
+                                    <input type="text" name="q" id="mod-finder-searchword124" class="js-finder-search-query form-control" value="" placeholder="Digite sua busca">
+                                    <input type="hidden" name="Itemid" value="101">
+                                    <button id='icon-searchbar' type="submit" class="btn btn-search" title="Pesquisar"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="main-top d-none d-lg-flex align-items-center d-grid">
+
+                    <a aria-label="Acessar página inicial" href="/" class="brand flex-grow-1">
+                        <img src="/templates/detranpe/images/logo-detranpe.png" alt="DETRAN-PE" class="w-custom">
+                    </a>
+
+                    <nav id="main-menu-itens" class="main-menu">
+                        
+<ul class="d-flex main-menu-link align-items-center ">
+
+
+			<li class="nav-item item-752 deeper parent">
+				<div class="dropdown"><button 
+		class="btn dropdown-toggle menu-op" 
+		type="button" 
+		data-bs-toggle="dropdown" 
+		aria-expanded="false">Institucional</button>
+	
+			</button>
+				<ul class="dropdown-menu dropdown-institucional mega-submenu centralizar">
+			<li class="nav-item item-761"><a href="/institucional-detran/nosso-perfil" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Nosso perfil">Nosso perfil</a></li><li class="nav-item item-762"><a href="/institucional-detran/estrutura-organizacional" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Estrutura Organizacional">Estrutura Organizacional</a></li><li class="nav-item item-763"><a href="/institucional-detran/imprensa" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Imprensa">Imprensa</a></li><li class="nav-item item-1084"><a href="/fale-conosco#ouvidoria" aria-label="Acessar a área da Ouvidoria">Ouvidoria</a></li><li class="nav-item item-764"><a href="https://estatisticas.detran.pe.gov.br/" aria-label="Acessar página de Estatísticas">Estatísticas</a></li><li class="nav-item item-1115 deeper parent"><a href="/institucional-detran/lgpd-detran-pe" class="sb-menuLink effects-mouseHover">LGPD DETRAN-PE</a><ul class="submenu-son"><li class="nav-item item-1116"><a href="/institucional-detran/lgpd-detran-pe/material-pedagogico-lgpd-detran-pe" class="sb-menuLink effects-mouseHover">Material Pedagógico LGPD DETRAN-PE</a></li><li class="nav-item item-1117"><a href="/institucional-detran/lgpd-detran-pe/material-tecnico-lgpd-detran-pe" class="sb-menuLink effects-mouseHover">Material Técnico LGPD DETRAN-PE</a></li><li class="nav-item item-1149"><a href="/institucional-detran/lgpd-detran-pe/novidades-lgpd" class="sb-menuLink effects-mouseHover">Novidades LGPD</a></li></ul></li><li class="nav-item item-1051"><a href="/institucional-detran/portal-da-transparencia" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Portal da Transparência</a></li><li class="nav-item item-766"><a href="/institucional-detran/pontos-de-atendimento" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Pontos de atendimento">Pontos de atendimento</a></li><li class="nav-item item-967"><a href="/institucional-detran/tecnologia-inovacao" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Tecnologia e Inovação">Tecnologia &amp; Inovação</a></li></ul></li><li class="nav-item item-750"><a href="/veiculos" id="nav-main" class="menu-op" aria-label="Acessar página de Veículos">Veículos</a></li><li class="nav-item item-751"><a href="/habilitacao" class="menu-op" aria-label="Acessar página de Habilitação">Habilitação</a></li><li class="nav-item item-1035 deeper parent"><button 
+	class="btn dropdown-toggle menu-op" 
+	type="button" 
+	data-bs-toggle="dropdown" 
+	aria-expanded="false">Transparência</button>
+	
+			</button>
+				<ul class="dropdown-menu dropdown-sa mega-submenu centralizar">
+			<li class="nav-item item-765"><a href="/transparencia/area-principal-transparencia" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Área principal transparência</a></li><li class="nav-item item-1036"><a href="/transparencia/informacoes-institucionais" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Informações Institucionais</a></li><li class="nav-item item-1037"><a href="/transparencia/perguntas-frequentes" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Perguntas Frequentes</a></li><li class="nav-item item-1038"><a href="/transparencia/responsabilidade-fiscal" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Responsabilidade Fiscal</a></li><li class="nav-item item-1039"><a href="/transparencia/fiscalizacao-e-controle" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Fiscalização e Controle</a></li><li class="nav-item item-1040"><a href="/transparencia/transferencias-estaduais-e-acordos" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Transferências Estaduais e Acordos</a></li><li class="nav-item item-1041"><a href="/transparencia/receitas-transferencias-da-uniao-divida-ativa-e-renuncia-de-receita" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Receitas, Transferências da União, Dívida Ativa e Renúncia de Receita</a></li><li class="nav-item item-1042"><a href="/transparencia/despesas" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Despesas</a></li><li class="nav-item item-1043"><a href="/transparencia/licitacoes-contratos-e-fornecedores" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Licitações, Contratos e Fornecedores</a></li><li class="nav-item item-1044"><a href="/transparencia/obras-publicas" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Obras Públicas</a></li><li class="nav-item item-1045"><a href="/transparencia/patrimonio-publico" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Patrimônio Público</a></li><li class="nav-item item-1046"><a href="/transparencia/recursos-humanos" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Recursos Humanos</a></li><li class="nav-item item-1047"><a href="/transparencia/servico-de-informacao-ao-cidadao-sic" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Serviço de Informação ao Cidadão – SIC</a></li><li class="nav-item item-1048"><a href="/transparencia/mapa-de-contratos-detran-pe" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Mapa de Contratos – DETRAN-PE</a></li><li class="nav-item item-1049"><a href="/transparencia/mapa-de-contratos-de-terceirizados-detran-pe" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Mapa de Contratos de Terceirizados – DETRAN-PE</a></li><li class="nav-item item-1050"><a href="/transparencia/mapa-de-diarias-e-passagens-detran-pe" class="sb-menuLink effects-mouseHover" aria-label="Acessar página de Portal da transparência">Mapa de Diárias e Passagens – DETRAN-PE</a></li></ul></li>
+			<li class="nav-item item-753 deeper parent">
+				<div class="dropdown"><button 
+	class="btn dropdown-toggle menu-op" 
+	type="button" 
+	data-bs-toggle="dropdown" 
+	aria-expanded="false">Sempre alerta</button>
+	
+			</button>
+				<ul class="dropdown-menu dropdown-sa mega-submenu centralizar">
+			<li class="nav-item item-774 deeper parent"><a href="/sempre-alerta-detran/educacao" class="sb-menuLink-titCard" aria-label="Acessar página de Educação"><i class="fas fa-book"></i>Educação</a><ul class="submenu-son"><li class="nav-item item-873"><a href="https://online8.detran.pe.gov.br/ServicosWeb/EPT/" aria-label="Acessar página de Prêmio DETRAN-PE de Educação para o Trânsito">Prêmio DETRAN-PE de Educação para o Trânsito</a></li><li class="nav-item item-874"><a href="https://online7.detran.pe.gov.br/Habilitacao/ProvaEletronica" aria-label="Acessar página de Simulado Eletrônico para Prova Teórica">Simulado Eletrônico para Prova Teórica</a></li><li class="nav-item item-875"><a href="/sempre-alerta-detran/educacao#materialPedagogico" aria-label="Acessar página de Capacitações E Materiais Pedagógicos">Capacitações E Materiais Pedagógicos</a></li><li class="nav-item item-876"><a href="/sempre-alerta/316-educacao/1890-entidades-credenciadas-para-educacao-de-transito" aria-label="Acessar página de Entidades Credenciadas para Educação de Trânsito">Entidades Credenciadas para Educação de Trânsito</a></li><li class="nav-item item-877"><a href="/educacao/informacoes-gerais/cfcs-em-destaque" aria-label="Acessar página de CFCs Em Destaque">CFCs Em Destaque</a></li><li class="nav-item item-1014"><a href="/sempre-alerta/316-educacao/1888-manuais" aria-label="Acessar página Manuais Importantes">Manuais importantes</a></li></ul></li><li class="nav-item item-775 deeper parent"><a href="/sempre-alerta-detran/cursos" class="sb-menuLink-titCard bg-verde" aria-label="Acessar página de Cursos"><i class="fas fa-chalkboard-teacher"></i>Cursos</a><ul class="submenu-son"><li class="nav-item item-1062"><a href="/curso-superando-o-temor-de-dirigir" >Curso Superando Temor de Dirigir</a></li><li class="nav-item item-883"><a href="/curso-de-pilotagem-defensiva-recife" aria-label="Acessar página de Pilotagem Defensiva">Pilotagem Defensiva</a></li><li class="nav-item item-884"><a href="/curso-mecanica-basica-iniciantes" aria-label="Acessar página de Mecânica Básica para Iniciantes">Mecânica Básica para Iniciantes</a></li><li class="nav-item item-886"><a href="/curso-preventivo-de-reciclagem" aria-label="Acessar página de Curso Preventivo de Reciclagem">Curso Preventivo de Reciclagem</a></li><li class="nav-item item-887"><a href="/educacao/informacoes-cursos/cursos-especializados-para-atividade-remunerada" aria-label="Acessar página de Cursos para Atividade Remunerada">Cursos para Atividade Remunerada</a></li><li class="nav-item item-1013"><a href="/curso-nocoes-de-primeiros-socorros" aria-label="Acessar página de Noções de Primeiros Socorros">Noções de Primeiros Socorros</a></li></ul></li><li class="nav-item item-776 deeper parent"><a href="/sempre-alerta-detran/fiscalizacao" class="sb-menuLink-titCard bg-preto" aria-label="Acessar página de Fiscalização"><i class="fas fa-shield-alt"></i>Fiscalização</a><ul class="submenu-son"><li class="nav-item item-878"><a href="/defesa-e-recurso" aria-label="Acessar página de Defesa ou Recurso">Defesa/Recurso</a></li><li class="nav-item item-879"><a href="/transferencia-de-pontos-da-cnh" aria-label="Acessar página de Identificação de condutor Infrator">Identificação de condutor Infrator</a></li><li class="nav-item item-880"><a href="/veiculos-recolhidos-e-leilao" aria-label="Acessar página de Veículos Recolhidos">Veículos Recolhidos</a></li><li class="nav-item item-881"><a href="/liberacao-de-documentos-recolhidos" aria-label="Acessar página de Liberação de Documentos Recolhidos">Liberação de Documentos Recolhidos</a></li><li class="nav-item item-882"><a href="/sempre-alerta-detran/fiscalizacao" aria-label="Acessar página de Leilões">Leilões</a></li><li class="nav-item item-1015"><a href="/cnh-suspensa-ou-cassada" aria-label="Acessar página de CNH Suspensa ou Cassada">CNH Suspensa ou Cassada</a></li></ul></li><li class="nav-item item-777 deeper parent"><a href="/sempre-alerta-detran/area-medica" class="sb-menuLink-titCard bg-vermelho" aria-label="Acessar página de Área médica"><i class="fas fa-clinic-medical"></i>Área médica</a><ul class="submenu-son"><li class="nav-item item-888"><a href="/isencao-para-condutor-pessoa-com-deficiencia" aria-label="Acessar página de Isenção para Condutor">Isenção para Condutor</a></li><li class="nav-item item-889"><a href="/duvidas-habilitacao/exame-toxicologico" aria-label="Acessar página de Exame Toxicológico">Exame Toxicológico</a></li><li class="nav-item item-890"><a href="/exames-psico-medicos" aria-label="Acessar página de Exames Psicomédicos">Exames Psicomédicos</a></li><li class="nav-item item-891"><a href="/isencao-para-nao-condutor-pessoa-com-deficiencia" aria-label="Acessar página de Isenção para não Condutor">Isenção para não Condutor</a></li><li class="nav-item item-892"><a href="/atendimento/atendimento-geral/credenciados/543-medicos-e-psicologos" aria-label="Acessar página de Lista de Médicos e Psicólogos Credenciados">Lista de Médicos e Psicólogos Credenciados</a></li><li class="nav-item item-1016"><a href="/consulta-de-resultado-de-exames-psicomedicos" aria-label="Acessar página de Consulta Resultado Exames">Consulta Resultado Exames</a></li></ul></li></ul></li><li class="nav-item item-754"><a href="/fale-conosco" class="menu-op text-center" aria-label="Acessar página de Dúvidas Frequentes">Fale Conosco</a></li></ul>
+
+                    </nav>
+                    <div class="container-form">
+
+                        <form class="mod-finder js-finder-searchform form-search" action="/component/finder/search?Itemid=101" method="get" role="search">
+                            <label class="visually-hidden" for="mod-finder-searchword125">Buscar</label>
+                            <input type="text" name="q" id="mod-finder-searchword125" class="js-finder-search-query form-control" value="" placeholder="Digite sua busca">
+                            <button type="submit" class="btn btn-search" title="Pesquisar"><i class="fa fa-search"></i></button>
+                            <input type="hidden" name="Itemid" value="101">
+                        </form>
+                    </div>
+
+                    <a aria-label="Acessar página do Portal de Serviços - versão Desktop" data-dt-link="true" data-dt-href="123" class="dt-pessoal">
+                        <img src="/templates/detranpe/images/user.svg" alt="Portal de Serviços - versão desktop">
+                        <div class="tooltip-dt-pessoal">
+                            <span>Acesse o</span>
+                            <span>Portal de Serviços</span>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+       
+        <div class="row g-0 bar-c-cores">
+            <div class="col-3 c-color-top c-azul"></div>
+            <div class="col-3 c-color-top c-vermelho"></div>
+            <div class="col-3 c-color-top c-amarelo"></div>
+            <div class="col-3 c-color-top c-verde"></div>
+        </div>
+        <!-- MODAL AVISO
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">                
+                <div class="modal-content">
+                <div class="row g-0 bar-c-cores">
+                    <div class="col-3 c-color-top c-azul"></div>
+                    <div class="col-3 c-color-top c-vermelho"></div>
+                    <div class="col-3 c-color-top c-amarelo"></div>
+                    <div class="col-3 c-color-top c-verde"></div>
+                </div>                    
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">DETRAN-PE INFORMA:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Intermitência temporária dos serviços do DETRAN-PE</strong></p>
+<p>O Departamento Estadual de Trânsito informa que todos os serviços do órgão estão em manutenção.</p>
+<p>Ressaltamos que todas as medidas corretivas já estão sendo tomadas pela empresa responsável para restabelecer a normalidade do atendimento o quanto antes.</p>
+<p>Pedimos desculpas pelos transtornos e agradecemos a compreensão de todos.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+                </div>
+            </div>
+        </div>        -->
+         <div class="container-pre-cookie centralizar">
+      <div class="container-cookie">
+          <div class="row g-0 bar-c-cores">
+              <div class="col-3 c-color-top c-azul"></div>
+              <div class="col-3 c-color-top c-verde"></div>
+              <div class="col-3 c-color-top c-amarelo"></div>
+              <div class="col-3 c-color-top c-vermelho"></div>
+          </div>
+          <div class="container-content">
+            <div class="content-cookie">
+                <p>Utilizamos cookies para melhorar a sua experiência neste site. Ao fechar esta mensagem sem modificar as definições do seu navegador, você concorda com a utilização deles. <a aria-label="Acessar página de Política de privacidade" href="/politica-de-privacidade"> Saiba mais sobre cookies e nossa política de privacidade.</a></p>
+                <button class='btn-cookie btn-primary' type="button">PROSSEGUIR e FECHAR</button>
+            </div>
+
+          </div>
+      </div> 
+
+  </div>
+    </header>
+
+    <div id="main-conteudo">
+
+                
+        <div class="container-fluid container-lg mb-5">
+<div class="row com-content-article item-page" itemscope itemtype="https://schema.org/Article">
+	<meta itemprop="inLanguage" content="pt-BR">
+	
+	
+			
+		<div class="page-header">
+		<h1 itemprop="headline" class="text-center mt-5">
+			Ooops... Página não encontrada!		</h1>
+							</div>
+		
+		
+	
+	
+		
+				
+			
+	<div class="article col-12">
+		<div itemprop="articleBody" class="com-content-article__body">
+			<div class="row jumbotron text-center mt-5">
+<div class="col-12"><!-- Erro 404 --></div>
+<div class="col-12"><img class="img-fluid" src="/images/documentos_geral/erro-404.png" alt="Imagem de erro 404" /><hr /></div>
+<div class="col-12">
+<p>A página que você acessou não existe ou está indisponível.</p>
+<p>Mas podemos te ajudar a escolher um novo caminho:</p>
+<div class="row g-2">
+<div class="col-12 col-lg-4"><a class="btn btn-primary mb-1" title="Ir para a página principal" href="https://www.detran.pe.gov.br/">Ir para a página principal</a></div>
+<div class="col-12 col-lg-4"><a class="btn btn-secondary mb-1" href="/veiculos">Página de serviços de VEÍCULOS</a></div>
+<div class="col-12 col-lg-4"><a class="btn btn-secondary mb-1" href="/habilitacao">Página de serviços de HABILITAÇÃO</a></div>
+</div>
+</div>
+</div> 		</div>
+	</div>
+
+	
+							</div>
+</div>
+        
+        
+    </div>
+
+    <div class="row g-0">
+        <div class="col-3 c-color-gov c-azul"></div>
+        <div class="col-3 c-color-gov c-verde"></div>
+        <div class="col-3 c-color-gov c-amarelo"></div>
+        <div class="col-3 c-color-gov c-vermelho"></div>
+    </div>
+
+    <a id="scroll-top" href="#">
+        <i class="fas fa-chevron-up txt-svg"></i>
+        <span class="sr-only">Voltar ao topo da página.</span>
+    </a>
+    
+    <footer class="d-flex justify-content-center" id="footer">
+
+        <div class="container">
+            <div class="row d-flex justify-content-lg-around">
+            <h2 class="d-none"> Mapa do Site </h2>
+                <div class="col-12 col-lg-3 d-flex flex-column">
+                    <ul class="menu-rodape">
+<li class="nav-item item-752 deeper parent"><a href="#" class="menu-op">Institucional</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-761"><a href="/institucional-detran/nosso-perfil" class="sb-menuLink effects-mouseHover">Nosso perfil</a></li><li class="nav-item item-762"><a href="/institucional-detran/estrutura-organizacional" class="sb-menuLink effects-mouseHover">Estrutura Organizacional</a></li><li class="nav-item item-763"><a href="/institucional-detran/imprensa" class="sb-menuLink effects-mouseHover">Imprensa</a></li><li class="nav-item item-1084"><a href="/fale-conosco#ouvidoria" class="sb-menuLink effects-mouseHover">Ouvidoria</a></li><li class="nav-item item-764"><a href="https://estatisticas.detran.pe.gov.br/" class="sb-menuLink effects-mouseHover">Estatísticas</a></li><li class="nav-item item-1115 deeper parent"><a href="/institucional-detran/lgpd-detran-pe" class="sb-menuLink effects-mouseHover">LGPD DETRAN-PE</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-1116"><a href="/institucional-detran/lgpd-detran-pe/material-pedagogico-lgpd-detran-pe" class="sb-menuLink effects-mouseHover">Material Pedagógico LGPD DETRAN-PE</a></li><li class="nav-item item-1117"><a href="/institucional-detran/lgpd-detran-pe/material-tecnico-lgpd-detran-pe" class="sb-menuLink effects-mouseHover">Material Técnico LGPD DETRAN-PE</a></li><li class="nav-item item-1149"><a href="/institucional-detran/lgpd-detran-pe/novidades-lgpd" class="sb-menuLink effects-mouseHover">Novidades LGPD</a></li></ul></li><li class="nav-item item-1051"><a href="/institucional-detran/portal-da-transparencia" class="sb-menuLink effects-mouseHover">Portal da Transparência</a></li><li class="nav-item item-766"><a href="/institucional-detran/pontos-de-atendimento" class="sb-menuLink effects-mouseHover">Pontos de atendimento</a></li><li class="nav-item item-967"><a href="/institucional-detran/tecnologia-inovacao" class="sb-menuLink effects-mouseHover">Tecnologia &amp; Inovação</a></li></ul></li><li class="nav-item item-750"><a href="/veiculos" title="nav-main" class="menu-op">Veículos</a></li><li class="nav-item item-751"><a href="/habilitacao" class="menu-op">Habilitação</a></li><li class="nav-item item-1035 deeper parent"><a href="/component/content/?view=article&amp;id=1646:transparencia&amp;Itemid=1035&amp;catid=37" class="menu-op">Transparência</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-765"><a href="/transparencia/area-principal-transparencia" class="sb-menuLink effects-mouseHover">Área principal transparência</a></li><li class="nav-item item-1036"><a href="/transparencia/informacoes-institucionais" class="sb-menuLink effects-mouseHover">Informações Institucionais</a></li><li class="nav-item item-1037"><a href="/transparencia/perguntas-frequentes" class="sb-menuLink effects-mouseHover">Perguntas Frequentes</a></li><li class="nav-item item-1038"><a href="/transparencia/responsabilidade-fiscal" class="sb-menuLink effects-mouseHover">Responsabilidade Fiscal</a></li><li class="nav-item item-1039"><a href="/transparencia/fiscalizacao-e-controle" class="sb-menuLink effects-mouseHover">Fiscalização e Controle</a></li><li class="nav-item item-1040"><a href="/transparencia/transferencias-estaduais-e-acordos" class="sb-menuLink effects-mouseHover">Transferências Estaduais e Acordos</a></li><li class="nav-item item-1041"><a href="/transparencia/receitas-transferencias-da-uniao-divida-ativa-e-renuncia-de-receita" class="sb-menuLink effects-mouseHover">Receitas, Transferências da União, Dívida Ativa e Renúncia de Receita</a></li><li class="nav-item item-1042"><a href="/transparencia/despesas" class="sb-menuLink effects-mouseHover">Despesas</a></li><li class="nav-item item-1043"><a href="/transparencia/licitacoes-contratos-e-fornecedores" class="sb-menuLink effects-mouseHover">Licitações, Contratos e Fornecedores</a></li><li class="nav-item item-1044"><a href="/transparencia/obras-publicas" class="sb-menuLink effects-mouseHover">Obras Públicas</a></li><li class="nav-item item-1045"><a href="/transparencia/patrimonio-publico" class="sb-menuLink effects-mouseHover">Patrimônio Público</a></li><li class="nav-item item-1046"><a href="/transparencia/recursos-humanos" class="sb-menuLink effects-mouseHover">Recursos Humanos</a></li><li class="nav-item item-1047"><a href="/transparencia/servico-de-informacao-ao-cidadao-sic" class="sb-menuLink effects-mouseHover">Serviço de Informação ao Cidadão – SIC</a></li><li class="nav-item item-1048"><a href="/transparencia/mapa-de-contratos-detran-pe" class="sb-menuLink effects-mouseHover">Mapa de Contratos – DETRAN-PE</a></li><li class="nav-item item-1049"><a href="/transparencia/mapa-de-contratos-de-terceirizados-detran-pe" class="sb-menuLink effects-mouseHover">Mapa de Contratos de Terceirizados – DETRAN-PE</a></li><li class="nav-item item-1050"><a href="/transparencia/mapa-de-diarias-e-passagens-detran-pe" class="sb-menuLink effects-mouseHover">Mapa de Diárias e Passagens – DETRAN-PE</a></li></ul></li><li class="nav-item item-753 deeper parent"><a href="#" class="menu-op">Sempre alerta</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-774 deeper parent"><a href="/sempre-alerta-detran/educacao" class="sb-menuLink-titCard"><span class="p-2 fas fa-book" aria-hidden="true"></span>Educação</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-873"><a href="https://online8.detran.pe.gov.br/ServicosWeb/EPT/" >Prêmio DETRAN-PE de Educação para o Trânsito</a></li><li class="nav-item item-874"><a href="https://online7.detran.pe.gov.br/Habilitacao/ProvaEletronica" >Simulado Eletrônico para Prova Teórica</a></li><li class="nav-item item-875"><a href="/sempre-alerta-detran/educacao#materialPedagogico" >Capacitações E Materiais Pedagógicos</a></li><li class="nav-item item-876"><a href="/sempre-alerta/316-educacao/1890-entidades-credenciadas-para-educacao-de-transito" >Entidades Credenciadas para Educação de Trânsito</a></li><li class="nav-item item-877"><a href="/educacao/informacoes-gerais/cfcs-em-destaque" >CFCs Em Destaque</a></li><li class="nav-item item-1014"><a href="/sempre-alerta/316-educacao/1888-manuais" >Manuais importantes</a></li></ul></li><li class="nav-item item-775 deeper parent"><a href="/sempre-alerta-detran/cursos" class="sb-menuLink-titCard bg-verde"><span class="p-2 fas fa-chalkboard-teacher" aria-hidden="true"></span>Cursos</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-1062"><a href="/curso-superando-o-temor-de-dirigir" >Curso Superando Temor de Dirigir</a></li><li class="nav-item item-883"><a href="/curso-de-pilotagem-defensiva-recife" >Pilotagem Defensiva</a></li><li class="nav-item item-884"><a href="/curso-mecanica-basica-iniciantes" >Mecânica Básica para Iniciantes</a></li><li class="nav-item item-886"><a href="/curso-preventivo-de-reciclagem" >Curso Preventivo de Reciclagem</a></li><li class="nav-item item-887"><a href="/educacao/informacoes-cursos/cursos-especializados-para-atividade-remunerada" >Cursos para Atividade Remunerada</a></li><li class="nav-item item-1013"><a href="/curso-nocoes-de-primeiros-socorros" >Noções de Primeiros Socorros</a></li></ul></li><li class="nav-item item-776 deeper parent"><a href="/sempre-alerta-detran/fiscalizacao" class="sb-menuLink-titCard bg-preto"><span class="p-2 fas fa-shield-alt" aria-hidden="true"></span>Fiscalização</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-878"><a href="/defesa-e-recurso" >Defesa/Recurso</a></li><li class="nav-item item-879"><a href="/transferencia-de-pontos-da-cnh" >Identificação de condutor Infrator</a></li><li class="nav-item item-880"><a href="/veiculos-recolhidos-e-leilao" >Veículos Recolhidos</a></li><li class="nav-item item-881"><a href="/liberacao-de-documentos-recolhidos" >Liberação de Documentos Recolhidos</a></li><li class="nav-item item-882"><a href="/sempre-alerta-detran/fiscalizacao" >Leilões</a></li><li class="nav-item item-1015"><a href="/cnh-suspensa-ou-cassada" >CNH Suspensa ou Cassada</a></li></ul></li><li class="nav-item item-777 deeper parent"><a href="/sempre-alerta-detran/area-medica" class="sb-menuLink-titCard bg-vermelho"><span class="p-2 fas fa-clinic-medical" aria-hidden="true"></span>Área médica</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-888"><a href="/isencao-para-condutor-pessoa-com-deficiencia" >Isenção para Condutor</a></li><li class="nav-item item-889"><a href="/duvidas-habilitacao/exame-toxicologico" >Exame Toxicológico</a></li><li class="nav-item item-890"><a href="/exames-psico-medicos" >Exames Psicomédicos</a></li><li class="nav-item item-891"><a href="/isencao-para-nao-condutor-pessoa-com-deficiencia" >Isenção para não Condutor</a></li><li class="nav-item item-892"><a href="/atendimento/atendimento-geral/credenciados/543-medicos-e-psicologos" >Lista de Médicos e Psicólogos Credenciados</a></li><li class="nav-item item-1016"><a href="/consulta-de-resultado-de-exames-psicomedicos" >Consulta Resultado Exames</a></li></ul></li></ul></li><li class="nav-item item-754"><a href="/fale-conosco" class="menu-op text-center">Fale Conosco</a></li></ul>
+
+                </div>
+                <div class="col-12 col-lg-3 d-flex flex-column">
+                    <div class="footer-heading">Sempre Alerta</div>
+                    <hr>    
+                    <ul class="menu-rodape_sa">
+<li class="nav-item item-752 deeper parent"><a href="#" class="menu-op">Institucional</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-761"><a href="/institucional-detran/nosso-perfil" class="sb-menuLink effects-mouseHover">Nosso perfil</a></li><li class="nav-item item-762"><a href="/institucional-detran/estrutura-organizacional" class="sb-menuLink effects-mouseHover">Estrutura Organizacional</a></li><li class="nav-item item-763"><a href="/institucional-detran/imprensa" class="sb-menuLink effects-mouseHover">Imprensa</a></li><li class="nav-item item-1084"><a href="/fale-conosco#ouvidoria" class="sb-menuLink effects-mouseHover">Ouvidoria</a></li><li class="nav-item item-764"><a href="https://estatisticas.detran.pe.gov.br/" class="sb-menuLink effects-mouseHover">Estatísticas</a></li><li class="nav-item item-1115 deeper parent"><a href="/institucional-detran/lgpd-detran-pe" class="sb-menuLink effects-mouseHover">LGPD DETRAN-PE</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-1116"><a href="/institucional-detran/lgpd-detran-pe/material-pedagogico-lgpd-detran-pe" class="sb-menuLink effects-mouseHover">Material Pedagógico LGPD DETRAN-PE</a></li><li class="nav-item item-1117"><a href="/institucional-detran/lgpd-detran-pe/material-tecnico-lgpd-detran-pe" class="sb-menuLink effects-mouseHover">Material Técnico LGPD DETRAN-PE</a></li><li class="nav-item item-1149"><a href="/institucional-detran/lgpd-detran-pe/novidades-lgpd" class="sb-menuLink effects-mouseHover">Novidades LGPD</a></li></ul></li><li class="nav-item item-1051"><a href="/institucional-detran/portal-da-transparencia" class="sb-menuLink effects-mouseHover">Portal da Transparência</a></li><li class="nav-item item-766"><a href="/institucional-detran/pontos-de-atendimento" class="sb-menuLink effects-mouseHover">Pontos de atendimento</a></li><li class="nav-item item-967"><a href="/institucional-detran/tecnologia-inovacao" class="sb-menuLink effects-mouseHover">Tecnologia &amp; Inovação</a></li></ul></li><li class="nav-item item-750"><a href="/veiculos" title="nav-main" class="menu-op">Veículos</a></li><li class="nav-item item-751"><a href="/habilitacao" class="menu-op">Habilitação</a></li><li class="nav-item item-1035 deeper parent"><a href="/component/content/?view=article&amp;id=1646:transparencia&amp;Itemid=1035&amp;catid=37" class="menu-op">Transparência</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-765"><a href="/transparencia/area-principal-transparencia" class="sb-menuLink effects-mouseHover">Área principal transparência</a></li><li class="nav-item item-1036"><a href="/transparencia/informacoes-institucionais" class="sb-menuLink effects-mouseHover">Informações Institucionais</a></li><li class="nav-item item-1037"><a href="/transparencia/perguntas-frequentes" class="sb-menuLink effects-mouseHover">Perguntas Frequentes</a></li><li class="nav-item item-1038"><a href="/transparencia/responsabilidade-fiscal" class="sb-menuLink effects-mouseHover">Responsabilidade Fiscal</a></li><li class="nav-item item-1039"><a href="/transparencia/fiscalizacao-e-controle" class="sb-menuLink effects-mouseHover">Fiscalização e Controle</a></li><li class="nav-item item-1040"><a href="/transparencia/transferencias-estaduais-e-acordos" class="sb-menuLink effects-mouseHover">Transferências Estaduais e Acordos</a></li><li class="nav-item item-1041"><a href="/transparencia/receitas-transferencias-da-uniao-divida-ativa-e-renuncia-de-receita" class="sb-menuLink effects-mouseHover">Receitas, Transferências da União, Dívida Ativa e Renúncia de Receita</a></li><li class="nav-item item-1042"><a href="/transparencia/despesas" class="sb-menuLink effects-mouseHover">Despesas</a></li><li class="nav-item item-1043"><a href="/transparencia/licitacoes-contratos-e-fornecedores" class="sb-menuLink effects-mouseHover">Licitações, Contratos e Fornecedores</a></li><li class="nav-item item-1044"><a href="/transparencia/obras-publicas" class="sb-menuLink effects-mouseHover">Obras Públicas</a></li><li class="nav-item item-1045"><a href="/transparencia/patrimonio-publico" class="sb-menuLink effects-mouseHover">Patrimônio Público</a></li><li class="nav-item item-1046"><a href="/transparencia/recursos-humanos" class="sb-menuLink effects-mouseHover">Recursos Humanos</a></li><li class="nav-item item-1047"><a href="/transparencia/servico-de-informacao-ao-cidadao-sic" class="sb-menuLink effects-mouseHover">Serviço de Informação ao Cidadão – SIC</a></li><li class="nav-item item-1048"><a href="/transparencia/mapa-de-contratos-detran-pe" class="sb-menuLink effects-mouseHover">Mapa de Contratos – DETRAN-PE</a></li><li class="nav-item item-1049"><a href="/transparencia/mapa-de-contratos-de-terceirizados-detran-pe" class="sb-menuLink effects-mouseHover">Mapa de Contratos de Terceirizados – DETRAN-PE</a></li><li class="nav-item item-1050"><a href="/transparencia/mapa-de-diarias-e-passagens-detran-pe" class="sb-menuLink effects-mouseHover">Mapa de Diárias e Passagens – DETRAN-PE</a></li></ul></li><li class="nav-item item-753 deeper parent"><a href="#" class="menu-op">Sempre alerta</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-774 deeper parent"><a href="/sempre-alerta-detran/educacao" class="sb-menuLink-titCard"><span class="p-2 fas fa-book" aria-hidden="true"></span>Educação</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-873"><a href="https://online8.detran.pe.gov.br/ServicosWeb/EPT/" >Prêmio DETRAN-PE de Educação para o Trânsito</a></li><li class="nav-item item-874"><a href="https://online7.detran.pe.gov.br/Habilitacao/ProvaEletronica" >Simulado Eletrônico para Prova Teórica</a></li><li class="nav-item item-875"><a href="/sempre-alerta-detran/educacao#materialPedagogico" >Capacitações E Materiais Pedagógicos</a></li><li class="nav-item item-876"><a href="/sempre-alerta/316-educacao/1890-entidades-credenciadas-para-educacao-de-transito" >Entidades Credenciadas para Educação de Trânsito</a></li><li class="nav-item item-877"><a href="/educacao/informacoes-gerais/cfcs-em-destaque" >CFCs Em Destaque</a></li><li class="nav-item item-1014"><a href="/sempre-alerta/316-educacao/1888-manuais" >Manuais importantes</a></li></ul></li><li class="nav-item item-775 deeper parent"><a href="/sempre-alerta-detran/cursos" class="sb-menuLink-titCard bg-verde"><span class="p-2 fas fa-chalkboard-teacher" aria-hidden="true"></span>Cursos</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-1062"><a href="/curso-superando-o-temor-de-dirigir" >Curso Superando Temor de Dirigir</a></li><li class="nav-item item-883"><a href="/curso-de-pilotagem-defensiva-recife" >Pilotagem Defensiva</a></li><li class="nav-item item-884"><a href="/curso-mecanica-basica-iniciantes" >Mecânica Básica para Iniciantes</a></li><li class="nav-item item-886"><a href="/curso-preventivo-de-reciclagem" >Curso Preventivo de Reciclagem</a></li><li class="nav-item item-887"><a href="/educacao/informacoes-cursos/cursos-especializados-para-atividade-remunerada" >Cursos para Atividade Remunerada</a></li><li class="nav-item item-1013"><a href="/curso-nocoes-de-primeiros-socorros" >Noções de Primeiros Socorros</a></li></ul></li><li class="nav-item item-776 deeper parent"><a href="/sempre-alerta-detran/fiscalizacao" class="sb-menuLink-titCard bg-preto"><span class="p-2 fas fa-shield-alt" aria-hidden="true"></span>Fiscalização</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-878"><a href="/defesa-e-recurso" >Defesa/Recurso</a></li><li class="nav-item item-879"><a href="/transferencia-de-pontos-da-cnh" >Identificação de condutor Infrator</a></li><li class="nav-item item-880"><a href="/veiculos-recolhidos-e-leilao" >Veículos Recolhidos</a></li><li class="nav-item item-881"><a href="/liberacao-de-documentos-recolhidos" >Liberação de Documentos Recolhidos</a></li><li class="nav-item item-882"><a href="/sempre-alerta-detran/fiscalizacao" >Leilões</a></li><li class="nav-item item-1015"><a href="/cnh-suspensa-ou-cassada" >CNH Suspensa ou Cassada</a></li></ul></li><li class="nav-item item-777 deeper parent"><a href="/sempre-alerta-detran/area-medica" class="sb-menuLink-titCard bg-vermelho"><span class="p-2 fas fa-clinic-medical" aria-hidden="true"></span>Área médica</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-888"><a href="/isencao-para-condutor-pessoa-com-deficiencia" >Isenção para Condutor</a></li><li class="nav-item item-889"><a href="/duvidas-habilitacao/exame-toxicologico" >Exame Toxicológico</a></li><li class="nav-item item-890"><a href="/exames-psico-medicos" >Exames Psicomédicos</a></li><li class="nav-item item-891"><a href="/isencao-para-nao-condutor-pessoa-com-deficiencia" >Isenção para não Condutor</a></li><li class="nav-item item-892"><a href="/atendimento/atendimento-geral/credenciados/543-medicos-e-psicologos" >Lista de Médicos e Psicólogos Credenciados</a></li><li class="nav-item item-1016"><a href="/consulta-de-resultado-de-exames-psicomedicos" >Consulta Resultado Exames</a></li></ul></li></ul></li><li class="nav-item item-754"><a href="/fale-conosco" class="menu-op text-center">Fale Conosco</a></li></ul>
+                </div>
+                <div class="col-12 col-lg-3 d-flex flex-column">
+                    <div class="footer-heading">Links Úteis</div>
+                    <hr>
+                    <ul class="menu-rodape_padrao">
+<li class="nav-item item-1145"><a href="/guia-de-documentos" >Guia de documentos</a></li><li class="nav-item item-916"><a href="/formulario-de-requerimento-padrao" >Formulário de Requerimento Padrão</a></li><li class="nav-item item-858"><a href="/atendimento-por-procuracao-veiculos" >Atendimento por Procuração (Veículos)</a></li><li class="nav-item item-734 deeper parent"><a href="/credenciados" >Credenciados</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-1136"><a href="/credenciados/instrutor-de-transito-autonomo" >Instrutor de Trânsito Autônomo</a></li></ul></li><li class="nav-item item-860"><a href="/documentos-e-comprovantes" >Documentos e Comprovantes</a></li><li class="nav-item item-859"><a href="/atendimento-por-procuracao-habilitacao" >Atendimento por Procuração (Habilitação)</a></li><li class="nav-item item-862"><a href="https://www.caixa.gov.br/servicos/dpvat/Paginas/default.aspx" target="_blank" rel="noopener">Seguro DPVAT</a></li><li class="nav-item item-160"><a href="/cetran-pe" >CETRAN-PE</a></li><li class="nav-item item-607"><a href="/politica-de-privacidade" >Política de Privacidade</a></li><li class="nav-item item-1007"><a href="/pontos-de-atendimento" >Pontos de Atendimento</a></li><li class="nav-item item-162"><a href="/outros-orgaos" >Outros órgãos</a></li><li class="nav-item item-861"><a href="/regras-para-agendamentos-e-servicos-online" >Regras para Agendamentos e Serviços Online</a></li><li class="nav-item item-965"><a href="/acessibilidade" >Acessibilidade</a></li><li class="nav-item item-966"><a href="/legislacao-detran" >Legislação</a></li><li class="nav-item item-1025"><a href="/links-institucionais" >Institucional</a></li></ul>
+                    <h2 class="d-none"> Contatos de atendimento </h2>
+                    <div class="footer-heading">Atendimento</div>
+                    <hr>
+                    <div class="atend-info">
+                        <p>
+                        <strong>Ouvidoria</strong><br>
+                            <a aria-label="Acessar página de ouvidoria para registrar manifestação" href="/fale-conosco#ouvidoria">Registre aqui sua manisfestação</a>
+                        </p>
+                        <p>
+                        <strong>Fale conosco</strong><br>
+                            <a aria-label="Envie sua dúvida, elogio, crítica ou sugestão na página de Fale Conosco" href="/fale-conosco" title="Fale conosco">Envie sua dúvida, elogio, crítica ou sugestão</a><br>
+                            <a aria-label="Enviar email para o detran" href="mailto:detran@detran.pe.gov.br" class="link-dtl-servico" role="link">detran@detran.pe.gov.br</a>
+                        </p>
+                        <p>
+                            <strong>Teleatendimento:</strong><br><a class="link-dtl-servico" role="link" href="tel:+558131848109" rel="noopener" aria-label="Ligar para o número 8131848109"> 81 3184.8109</a> / <a class="link-dtl-servico" role="link" href="tel:+558131848129" rel="noopener" aria-label="Ligar para o número 8131848129">3184.8129.</a><br> (08h às 17h)
+                        </p>
+                     <p>
+                            <strong>Horário de Funcionamento</strong><br> DETRAN/PE (Sede) - 07h45 às 13h30<br> (Segunda a Sexta-feira)
+                        </p>
+                    </div>
+                    <ul class="d-flex flex-wrap justify-content-between mb-5 social-media">
+                        <li>
+                            <a aria-label="Acessar página de instagram do detran-PE. Abre em nova aba" target="_blank" href="https://www.instagram.com/detranpeoficial/" >
+                                <img src="/templates/detranpe/images/Instagram-lg.svg" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Acessar página de twitter do detranpe. Abre em nova aba" target="_blank" href="https://twitter.com/detranpe" >
+                                <img src="/templates/detranpe/images/Twitter-lg.svg" alt="Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Acessar página do facebook do detranpe. Abre em nova aba" target="_blank" href="https://pt-br.facebook.com/DetranPe/" >
+                                <img src="/templates/detranpe/images/Facebook-lg.svg" alt="Facebbok">
+                            </a>
+                        </li>
+                        <li>
+                            <a  aria-label="Acessar página de youtube do detranpe. Abre em nova aba" target="_blank" href="https://www.youtube.com/c/detranpeoficial" >
+                                <img src="/templates/detranpe/images/YouTube-lg.svg" alt="YouTube">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3 d-flex flex-column">
+                    <div class="footer-heading">Acesso Restrito</div>
+                    <hr>
+                    <ul class="menu-rodape_padrao">
+<li class="nav-item item-340"><a href="https://online7.detran.pe.gov.br/AtendimentoAgendadoAdmistrativo/frmLogin.aspx" target="_blank" rel="noopener">Atendimento agendado</a></li><li class="nav-item item-895"><a href="/atendimentos-para-despachantes" >Atendimento para despachante</a></li><li class="nav-item item-1001"><a href="https://online8.detran.pe.gov.br/Veiculo/BaseRENAEST" target="_blank" rel="noopener">Base RENAEST</a></li><li class="nav-item item-342"><a href="https://online8.detran.pe.gov.br/Veiculo/CasdastroDespachante/" target="_blank" rel="noopener">Cadastro de despachante</a></li><li class="nav-item item-1021"><a href="https://online8.detran.pe.gov.br/DetranPessoal/Autenticacao/AutenticarGovBRWeb?urlServico=https%3A%2F%2Fonline5.detran.pe.gov.br%2FServicosWeb%2FVeiculoMVC%2FConsultaPlaca%2FConsultaPlacaAutorizada" target="_blank" rel="noopener">Consulta Placa Autorizada</a></li><li class="nav-item item-343"><a href="https://online8.detran.pe.gov.br/OutrosProjetos/ControleARs/frmLogin.aspx" target="_blank" rel="noopener">Controle de AR</a></li><li class="nav-item item-344"><a href="https://online8.detran.pe.gov.br/Veiculo/ControleEdital/" target="_blank" rel="noopener">Controle de edital</a></li><li class="nav-item item-1010"><a href="https://online8.detran.pe.gov.br/ServicosWeb/MVCControleEstacionamento" target="_blank" rel="noopener">Controle de estacionamento</a></li><li class="nav-item item-345"><a href="https://online8.detran.pe.gov.br/Habilitacao/CredenciadosOnline/" target="_blank" rel="noopener">Credenciados online</a></li><li class="nav-item item-346"><a href="https://online7.detran.pe.gov.br/CursoInstrutor/frmLogin.aspx" target="_blank" rel="noopener">Curso para instrutores</a></li><li class="nav-item item-347"><a href="https://online8.detran.pe.gov.br/Veiculo/SolutionDetranOnline/DetranOnline/Principal/frmLogin.aspx" target="_blank" rel="noopener">DETRAN Online</a></li><li class="nav-item item-1008"><a href="https://online8.detran.pe.gov.br/Veiculo/INFOTRAN-PE/Principal/frmLogin.aspx" target="_blank" rel="noopener">INFOTRAN-PE</a></li><li class="nav-item item-348"><a href="https://online8.detran.pe.gov.br/Habilitacao/JuntaEspecialSaude/frmLogin.aspx" target="_blank" rel="noopener">Junta especial de saúde</a></li><li class="nav-item item-349"><a href="https://online8.detran.pe.gov.br/Veiculo/LacresOnline/frmLogin.aspx" target="_blank" rel="noopener">Placas Online</a></li><li class="nav-item item-1020"><a href="https://online8.detran.pe.gov.br/Veiculo/ReducaoBaseCalculoIPVA" target="_blank" rel="noopener">Redução Base de Cálculo - IPVA</a></li><li class="nav-item item-351"><a href="https://online8.detran.pe.gov.br/Habilitacao/ReforOnLine_BIO/startuser.aspx" target="_blank" rel="noopener">REFOR online</a></li><li class="nav-item item-600"><a href="/sei" >SEI - Usuário externo</a></li><li class="nav-item item-352"><a href="https://online8.detran.pe.gov.br/Veiculo/VeiculoEscolarTemporario/frmAutorizacaoTmpLogin.aspx" target="_blank" rel="noopener">Veículo escolar temporário</a></li><li class="nav-item item-570"><a href="https://online8.detran.pe.gov.br/ProjetosComuns/MvcLogin/Autenticacao/Login" target="_blank" rel="noopener">Taxa repasse credenciado</a></li><li class="nav-item item-1114"><a href="https://online8.detran.pe.gov.br/ServicosWeb/MvcArquivoProtocolo" target="_blank" rel="noopener">Upload Documentos Digitais</a></li></ul>
+                </div>
+            </div>
+            <hr class="mb-5 mx-auto"/>
+<div class="centralizar" id="SELO-CPA">
+    <a class="sa sat" href="http://selodigital.imprensaoficial.com.br/validacao/SMPED/011fdfc06563efc9d4" target="_blank">
+        <img src="/images/cpa/sa1.svg" height="100" alt="Este sitio possui um selo de acessibilidade digital.">
+        <div class="st"><div>Selo de Acessibilidade Digital</div>Nº do Selo: 2025-SAD/001<br>Validade: 29/01/2027<br>Clique para mais informações
+        </div>
+    </a>
+</div>
+<div class="centralizar" id="SELO-CPA-DARK">
+    <a class="sa sat" href="http://selodigital.imprensaoficial.com.br/validacao/SMPED/011fdfc06563efc9d4" target="_blank">
+        <img src="/images/cpa/sa2.svg" height="100" alt="Este sitio possui um selo de acessibilidade digital.">
+        <div class="st"><div>Selo de Acessibilidade Digital</div>Nº do Selo: 2025-SAD/001<br>Validade: 29/01/2027<br>Clique para mais informações
+        </div>
+    </a>
+</div>          
+			<hr class="my-5 mx-auto"/>          
+            <div class="row d-flex">
+                <div class="col-12 col-lg-4 d-flex flex-column align-items-center">
+                    <img id="logo-detran-rodape" width="150px" src="/templates/detranpe/images/logo-detran.svg" alt="Departamento Estadual de Trânsito de Pernambuco - DETRAN-PE">
+                    <img id="logo-detran-rodape-dark" width="150px" src="/templates/detranpe/images/logo-detranpe.png" alt="Departamento Estadual de Trânsito de Pernambuco - DETRAN-PE">
+                    <p class="text-center mt-2">
+                        <strong>Departamento Estadual de Trânsito de Pernambuco</strong><br>Estrada do Barbalho, 889 - Iputinga - Recife/PE<br>CEP: 50.690-900 - CNPJ: 09.753.781/0001-60
+                    </p>
+                </div>
+                <hr class="mt-4 d-block d-lg-none mx-auto w-50">
+                <div class="col-12 col-lg-4 d-flex flex-column align-items-center border border-top-0 border-bottom-0 mb-4">
+                    <img id="logo-gov-rodape" src="/templates/detranpe/images/logo-govpe-preta.png" class="logope-footer" alt="Governo do Estado de Pernambuco">
+                    <img id="logo-gov-rodape-dark" src="/templates/detranpe/images/logo-govpe-branca.png" class="logope-footer" alt="Governo do Estado de Pernambuco">
+                </div>
+                <hr class="mb-5 d-block d-lg-none mx-auto w-50">
+                <div class="col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center">
+                    <p class="centralizar">Hospedagem na
+                        <a class="text-start" aria-label="Portal ATI - Agência Estadual de Tecnologia da Informação  - Principal" href="https://www.ati.pe.gov.br/" >
+                            <img src="/templates/detranpe/images/logo-ati-footer.png" class="w-50" alt="Logotipo oficial da ATI - Agência Estadual de Tecnologia da Informação">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+    </footer>
+    
+    
+  	<div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    
+    <!-- Scripts JS -->
+    <script src="/templates/detranpe/assets/js/jquery-3.6.0.min.js"></script>
+  	<script src="/templates/detranpe/assets/js/jquery.mask.js"></script>
+  	<script src="/templates/detranpe/assets/js/jquery.maskedinput.js"></script>
+  	<script src="/templates/detranpe/assets/js/jquery.maskedinput.min.js"></script>
+    <script src="/templates/detranpe/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/templates/detranpe/assets/js/all.js"></script>
+    <script src="/templates/detranpe/assets/js/_main.js"></script>
+    <script src="/templates/detranpe/assets/js/home.js"></script>
+    <script src="/templates/detranpe/assets/js/menu.js"></script>
+    <script src="/templates/detranpe/assets/js/sempre-alerta-cursos.js"></script>
+    <script src="/templates/detranpe/assets/js/menu-acessibilidade.js"></script>
+    <script src="/templates/detranpe/assets/js/masonry.pkgd.min.js"></script>
+  	<script src="/templates/detranpe/assets/js/pesquisa-servico.js" defer></script>
+  	<script src="/templates/detranpe/assets/js/taxas-veic.js"></script>
+  	<script src="/templates/detranpe/assets/js/taxas-hab.js"></script>
+    <script src="/templates/detranpe/assets/js/scroll-to-top.js"></script>
+    <script src="/templates/detranpe/assets/js/dinamic-links.js"></script>
+    <script src="/templates/detranpe/assets/js/tema.js"></script>
+
+    <!-- React Scripts -->
+    <script src="/templates/detranpe/assets/js/react.production.min.js"></script>
+    <script src="/templates/detranpe/assets/js/react-dom.production.min.js"></script>
+    <script src="/templates/detranpe/assets/js/babel.min.js"></script>
+    <script type="text/babel" src="/templates/detranpe/assets/js/push-notification.js"></script>
+    <script type="text/babel" src="/templates/detranpe/assets/js/portal-card.js"></script>
+    <script type="text/babel" src="/templates/detranpe/assets/js/nosso-perfil-card.js"></script>
+    <script type="text/babel" src="/templates/detranpe/assets/js/section-p-atend.js"></script>
+    <script type="text/babel" src="/templates/detranpe/assets/js/section-cards.js"></script>
+    <script type="text/babel" src="/templates/detranpe/assets/js/section-estatisticas.js"></script>
+
+    <!-- VLibras Plugin -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+    
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-D3X4ZVH2M5"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-D3X4ZVH2M5');
+	</script>
+
+    <!-- reference to LeafLet map -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+</body>
+</html>

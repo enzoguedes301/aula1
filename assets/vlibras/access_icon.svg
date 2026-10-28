@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="24" height="24">
+  <!-- Ícone de Acessibilidade com Mão Sinalizando -->
+  <circle cx="32" cy="32" r="30" fill="#1f7f4d" stroke="#fff" stroke-width="2"/>
+  <path d="M32 12c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 38c-11 0-20-9-20-20s9-20 20-20 20 9 20 20-9 20-20 20z" fill="#fff"/>
+  <path d="M32 28c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm8 8h-4v-4h4v4zm-12 0h-4v-4h4v4z" fill="#1f7f4d"/>
+</svg>

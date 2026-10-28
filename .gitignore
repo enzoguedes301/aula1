@@ -1,0 +1,18 @@
+# Segredos — nunca sobem. O .env.example é o modelo e fica versionado.
+.env
+.env.*
+!.env.example
+
+node_modules/
+
+# Build do painel (gerado por `npm run build:admin`)
+admin-dist/
+
+# Netlify/Vercel locais
+.netlify/
+.vercel/
+
+# Sistema / editor
+Thumbs.db
+Desktop.ini
+*.log

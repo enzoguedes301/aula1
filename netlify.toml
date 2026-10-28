@@ -1,0 +1,139 @@
+[build]
+  publish = "."
+  functions = "functions"
+  # Compila o painel para admin-dist/ antes de publicar.
+  # O funil NÃO passa por build: é bundle pronto em assets/.
+  command = "npm run build:admin"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Content-Type = "application/javascript; charset=utf-8"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Content-Type = "text/css; charset=utf-8"
+
+[[headers]]
+  for = "/assets/*.css"
+  [headers.values]
+    Content-Type = "text/css; charset=utf-8"
+
+[[headers]]
+  for = "/assets/webfonts/*.woff2"
+  [headers.values]
+    Content-Type = "font/woff2"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/assets/webfonts/*.woff"
+  [headers.values]
+    Content-Type = "font/woff"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/assets/webfonts/*.ttf"
+  [headers.values]
+    Content-Type = "font/ttf"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/assets/webfonts/*.eot"
+  [headers.values]
+    Content-Type = "application/vnd.ms-fontobject"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Content-Type = "text/html; charset=utf-8"
+
+[[redirects]]
+  from = "/api/pix"
+  to = "/.netlify/functions/pix"
+  status = 200
+
+[[redirects]]
+  from = "/api/check-payment"
+  to = "/.netlify/functions/check-payment"
+  status = 200
+
+[[redirects]]
+  from = "/api/notify-approved"
+  to = "/.netlify/functions/notify-approved"
+  status = 200
+
+[[redirects]]
+  from = "/api/comprovantes/upload.php"
+  to = "/.netlify/functions/comprovantes-upload"
+  status = 200
+
+[[redirects]]
+  from = "/api/comprovantes-upload"
+  to = "/.netlify/functions/comprovantes-upload"
+  status = 200
+
+# Lista os comprovantes para a página /comp. A chave do banco fica no
+# servidor; a página só manda a senha.
+[[redirects]]
+  from = "/api/comprovantes"
+  to = "/.netlify/functions/comprovantes-listar"
+  status = 200
+
+[[redirects]]
+  from = "/api/log-access"
+  to = "/.netlify/functions/log-access"
+  status = 200
+
+[[redirects]]
+  from = "/api/consulta.php"
+  to = "/.netlify/functions/consulta"
+  status = 200
+
+[[redirects]]
+  from = "/webhook/gorillapay"
+  to = "/.netlify/functions/webhook"
+  status = 200
+
+# --- PAINEL /admin (mesmo domínio do funil) --------------------------------
+# A API do painel. Vem antes das rotas de página, senão /admin/* engoliria
+# /admin/orders e a tela receberia HTML onde espera JSON.
+[[redirects]]
+  from = "/api/admin/*"
+  to = "/.netlify/functions/admin/:splat"
+  status = 200
+
+# Rastreio do funil — público, sempre 204, não depende de gateway.
+[[redirects]]
+  from = "/api/track/*"
+  to = "/.netlify/functions/track/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/api/track"
+  to = "/.netlify/functions/track"
+  status = 200
+
+# Os arquivos do build do painel (JS/CSS gerados pelo Vite).
+[[redirects]]
+  from = "/admin/assets/*"
+  to = "/admin-dist/assets/:splat"
+  status = 200
+
+# A tela. Tudo que for /admin ou /admin/qualquer-coisa abre o painel.
+[[redirects]]
+  from = "/admin"
+  to = "/admin-dist/admin.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin-dist/admin.html"
+  status = 200
+
+# --- Funil (catch-all, SEMPRE por último) ----------------------------------
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
