@@ -5218,7 +5218,7 @@ function CentralDeRastreio({
               detalhe={
                 estado.tabelasOk
                   ? 'leads, funnel_events e painel_config existem no Supabase.'
-                  : 'FALTAM. Rode o arquivo supabase-painel.sql no SQL Editor do Supabase — sem isso nenhum lead é gravado.'
+                  : 'Este projeto não guarda dados: o rastreio vai para os pixels externos. Os números aqui ficam em zero — veja o relatório na UTMify.'
               }
             />
             <LinhaDeEstado

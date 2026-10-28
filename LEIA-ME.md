@@ -17,27 +17,29 @@ Site de funil com pagamento PIX e um painel de tracking em `/admin`.
 
 ## O que falta (2 passos)
 
-1. **Criar as tabelas no Supabase** — ver "Passo 1" abaixo. *Sem isso nenhum lead é gravado.*
-2. **Subir para Netlify ou Vercel** — ver "Passo 2".
+1. **Subir para Netlify** — ver abaixo.
 
 ---
 
-## Passo 1 — Criar as tabelas (obrigatório)
+## Banco de dados: não há
 
-O Supabase não deixa criar tabela pela API; tem de ser pelo painel deles.
+Este projeto **não guarda nada**. Nem lead, nem etapa do funil, nem transação.
 
-1. Entre no Supabase → **SQL Editor** → **New query**
-2. Cole o conteúdo de [`supabase-painel.sql`](supabase-painel.sql)
-3. **Run**
+O rastreio é repassado na hora para os pixels externos (UTMify) e descartado.
+Quem tem o registro de verdade:
 
-É seguro: tudo é `IF NOT EXISTS`, não apaga nada, rodar duas vezes não quebra.
+- **vendas** → o painel do gateway (GorillaPay)
+- **funil e leads** → o relatório da UTMify
 
-Para conferir: abra `/admin` → aba **Rastreio**. As três linhas de estado
-devem ficar verdes conforme o movimento chega.
+Consequência a saber de antemão: o painel `/admin` abre normalmente, mas as
+listas vêm vazias e os contadores em zero — não existe histórico local para
+ele consultar. Para o painel voltar a mostrar dados é preciso ligar uma fonte
+de persistência a `contarFunil` e `listarLeads`, em
+[`functions/lib/tracking-store.js`](functions/lib/tracking-store.js).
 
 ---
 
-## Passo 2 — Subir
+## Subir
 
 ### Variáveis de ambiente (as mesmas nos dois provedores)
 
@@ -47,9 +49,8 @@ Veja [`.env.example`](.env.example) para a lista completa. As obrigatórias:
 PAYMENT_GATEWAY=gorillapay
 GATEWAY_API_KEY=sk_live_...          (GorillaPay → API Keys)
 GATEWAY_WEBHOOK_SECRET=              (GorillaPay → Settings → Webhooks)
-NEXT_PUBLIC_SUPABASE_URL=            (Supabase → Settings → API)
-SUPABASE_SERVICE_ROLE_KEY=           (idem — é a service_role, não a anon)
 ADMIN_TOKEN=                         (a senha do painel; vazia = painel some)
+UTMIFY_TOKEN=                        (sem ele, nenhum evento é enviado)
 ```
 
 > `ADMIN_TOKEN` vazio faz as rotas `/api/admin/*` responderem 404 de propósito:
@@ -128,8 +129,7 @@ functions/
   lib/
     gateway.js            a interface que todo gateway deve cumprir
     gateway-factory.js    escolhe o gateway pela variável PAYMENT_GATEWAY
-    tracking-store.js     grava leads e etapas no Supabase
-    supabase.js           cliente do banco
+    tracking-store.js     repassa leads e etapas aos pixels (sem banco)
 
 src/components/
   PainelAdmin.tsx         a tela do painel (React)
@@ -140,7 +140,6 @@ assets/
   detran-logos/           as imagens, todas locais
 
 admin.html                entrada do build do painel
-supabase-painel.sql       as tabelas — RODE ISTO PRIMEIRO
 ```
 
 ---

@@ -1,10 +1,7 @@
-const { getSupabase } = require("./lib/supabase");
 const { getGateway } = require("./lib/gateway-factory");
 const credentials = require("./credentials");
 
 const UTMIFY_TOKEN = process.env.UTMIFY_TOKEN || credentials.UTMIFY_TOKEN;
-const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 // Cache UTMify
 const utmifyCache = new Map();
@@ -132,8 +129,6 @@ function fmtPhone(phone) {
 
 exports.handler = async (event) => {
   console.log("[PIX] ===== FUNÇÃO INICIADA =====");
-  console.log("[PIX] SUPABASE_URL exists:", !!SUPABASE_URL);
-  console.log("[PIX] SUPABASE_KEY exists:", !!SUPABASE_KEY);
 
   if (event.httpMethod === "OPTIONS") {
     return {
@@ -207,29 +202,8 @@ exports.handler = async (event) => {
     console.log("[PIX] Transaction ID:", transactionId);
     console.log("[PIX] PIX Code: ✓ Existe");
 
-    // Salvar no Supabase (não bloqueia)
-    if (SUPABASE_URL && SUPABASE_KEY) {
-      try {
-        const supabase = getSupabase();
-        await supabase.from("transactions").insert({
-          transaction_id: transactionId,
-          amount: amountReais,
-          customer_name: customerName,
-          customer_email: customerEmail,
-          customer_cpf: customerCpf,
-          customer_phone: customerPhone,
-          status: "pending",
-          brcode: pixCode,
-          gateway: gateway.name,
-          utm_source: utms.utm_source || null,
-          utm_campaign: utms.utm_campaign || null,
-          utm_medium: utms.utm_medium || null,
-        });
-        console.log("[Supabase] ✓ Salvo:", transactionId);
-      } catch (err) {
-        console.error("[Supabase] Erro (continuando):", err.message);
-      }
-    }
+    // Este projeto não guarda a transação: quem tem o registro de verdade é o
+    // gateway. O que sai daqui é só o aviso para a UTMify, abaixo.
 
     // Notificar UTMify (não bloqueia)
     await sendUtmify(

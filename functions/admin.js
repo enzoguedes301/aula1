@@ -13,7 +13,6 @@
  */
 
 const crypto = require("crypto");
-const { getSupabase } = require("./lib/supabase");
 const { contarFunil, listarLeads, ETAPAS, hoje } = require("./lib/tracking-store");
 
 const ADMIN_TOKEN = (process.env.ADMIN_TOKEN || "").trim();
@@ -63,45 +62,26 @@ function intervalo(periodo) {
   }
 }
 
-async function lerVendas({ de, ate }) {
-  const supabase = getSupabase();
-  const { data, error } = await supabase
-    .from("transactions")
-    .select("*")
-    .gte("created_at", `${de}T00:00:00`)
-    .lte("created_at", `${ate}T23:59:59.999`)
-    .order("created_at", { ascending: false })
-    .limit(5000);
-
-  if (error) {
-    console.error("[Admin] Falha ao ler vendas:", error.message);
-    return [];
-  }
-  return data || [];
+/**
+ * Sem persistência não há venda registrada para ler — o histórico vive no
+ * painel do gateway. As rotas abaixo seguem respondendo na forma que a tela
+ * espera, com as listas vazias e os totais em zero.
+ */
+async function lerVendas() {
+  return [];
 }
 
+/**
+ * A configuração do painel volta sempre no padrão: não há onde guardar o que
+ * o usuário salvar.
+ */
 async function lerConfig() {
-  const padrao = { taxaGatewayPct: 2, impostoPct: 0, custoPorVenda: 0, despesas: [] };
-  try {
-    const supabase = getSupabase();
-    const { data } = await supabase
-      .from("painel_config")
-      .select("value")
-      .eq("key", "painel")
-      .maybeSingle();
-    return { ...padrao, ...(data?.value || {}) };
-  } catch {
-    return padrao;
-  }
+  return { taxaGatewayPct: 2, impostoPct: 0, custoPorVenda: 0, despesas: [] };
 }
 
+/** Aceita o POST e descarta — nada é gravado. */
 async function gravarConfig(valor) {
-  const supabase = getSupabase();
-  const { error } = await supabase
-    .from("painel_config")
-    .upsert({ key: "painel", value: valor, updated_at: new Date().toISOString() },
-            { onConflict: "key" });
-  if (error) throw new Error(error.message);
+  console.log("[Admin] Config recebida e descartada:", JSON.stringify(valor));
 }
 
 exports.handler = async (event) => {
@@ -137,32 +117,21 @@ exports.handler = async (event) => {
     // ------------------------------------------------------------- rastreio
     // Diagnóstico da central: cada peça do rastreio está de pé?
     if (caminho === "/rastreio") {
-      const supabase = getSupabase();
       const { de, ate } = intervalo("hoje");
-
-      // Uma leitura real por tabela. `head: true` não propaga o erro de
-      // tabela ausente — por isso aqui se pede uma linha de verdade.
-      const [rLeads, rEventos, rConfig] = await Promise.all([
-        supabase.from("leads").select("lead_key", { count: "exact" }).limit(1),
-        supabase.from("funnel_events").select("session", { count: "exact" }).limit(1),
-        supabase.from("painel_config").select("key", { count: "exact" }).limit(1),
-      ]);
-
-      const tabelasOk = !rLeads.error && !rEventos.error && !rConfig.error;
-      const eventos = rEventos.count || 0;
+      const pixelLigado = Boolean(process.env.UTMIFY_TOKEN);
 
       return json(200, {
         success: true,
         data: {
-          tabelasOk,
-          trackingOk: eventos > 0,
-          leads: rLeads.count || 0,
-          eventos,
+          tabelasOk: false,
+          trackingOk: pixelLigado,
+          leads: 0,
+          eventos: 0,
           etapas: ETAPAS,
-          funil: tabelasOk ? await contarFunil({ de, ate }) : {},
-          erro: tabelasOk
-            ? undefined
-            : "Tabelas ausentes. Rode supabase-painel.sql no SQL Editor do Supabase.",
+          funil: await contarFunil({ de, ate }),
+          erro: pixelLigado
+            ? "Rastreio por pixel: os eventos vão para a UTMify e não são guardados aqui. Os números deste painel ficam em zero — veja o relatório na UTMify."
+            : "UTMIFY_TOKEN não configurado: nenhum evento está sendo enviado.",
         },
       });
     }

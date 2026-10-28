@@ -11,7 +11,6 @@
  * rota. A senha é conferida aqui também, onde o navegador não a vê.
  */
 
-const { getSupabase } = require("./lib/supabase");
 const crypto = require("crypto");
 
 const SENHA = (process.env.COMPROVANTES_SENHA || "").trim();
@@ -53,19 +52,8 @@ exports.handler = async (event) => {
     return json(401, { success: false, error: "UNAUTHORIZED" });
   }
 
-  try {
-    const supabase = getSupabase();
-    const { data, error } = await supabase
-      .from("comprovantes")
-      .select("*")
-      .order("created_at", { ascending: false })
-      .limit(500);
-
-    if (error) throw new Error(error.message);
-
-    return json(200, { success: true, data: data || [] });
-  } catch (err) {
-    console.error("[Comprovantes] Erro:", err.message);
-    return json(500, { success: false, error: "INTERNAL_ERROR", message: err.message });
-  }
+  // Sem persistência não há comprovante guardado para listar. A senha acima
+  // continua valendo, e a resposta mantém a forma que a página /comp espera —
+  // só vem sempre vazia.
+  return json(200, { success: true, data: [] });
 };

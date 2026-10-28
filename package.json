@@ -10,8 +10,6 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@supabase/ssr": "^0.6.1",
-    "@supabase/supabase-js": "^2.104.1",
     "dotenv": "^16.6.1",
     "express": "^4.21.2",
     "react": "^19.3.1",

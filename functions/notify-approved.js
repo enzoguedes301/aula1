@@ -1,4 +1,12 @@
-const { getSupabase } = require("./lib/supabase");
+/**
+ * AVISO DE APROVAÇÃO — hoje é só um reconhecimento.
+ *
+ * Marcava a transação como aprovada no banco. Sem persistência não há registro
+ * local a atualizar: o status verdadeiro vive no gateway e o funil o descobre
+ * consultando /api/check-payment.
+ *
+ * A rota continua respondendo 200 para não quebrar quem já a chama.
+ */
 
 function jsonResponse(statusCode, body) {
   return {
@@ -32,15 +40,9 @@ exports.handler = async (event) => {
 
   const transactionId = body.id || body.transaction_id || body.idTransaction || event.queryStringParameters?.id;
 
-  try {
-    const supabase = getSupabase();
-    if (transactionId) {
-      await supabase
-        .from("transactions")
-        .update({ status: "APPROVED", paid_at: new Date().toISOString() })
-        .eq("transaction_id", transactionId);
-    }
-  } catch (_) {}
+  if (transactionId) {
+    console.log("[NotifyApproved] Aviso recebido:", transactionId);
+  }
 
   return jsonResponse(200, { success: true });
 };

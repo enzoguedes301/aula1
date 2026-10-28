@@ -1,4 +1,3 @@
-const { getSupabase } = require("./lib/supabase");
 
 function jsonResponse(statusCode, body) {
   return {
@@ -47,19 +46,15 @@ exports.handler = async (event) => {
     }
   } catch (_) {}
 
-  try {
-    const supabase = getSupabase();
-    await supabase.from("comprovantes").insert({
-      transaction_id: body.transaction_id || body.id || null,
-      cpf:    body.cpf || body.customer_cpf || null,
-      nome:   body.nome || body.customer_name || null,
-      arquivo: body.arquivo || body.file || body.url || null,
-      extra: {
-        filename:       body.filename || null,
-        customer_email: body.customer_email || null,
-      },
-    });
-  } catch (_) {}
+  // Sem persistência o comprovante não é guardado — fica só o registro de que
+  // chegou, no log da função. A rota segue respondendo 200 para o envio na
+  // tela não acusar falha.
+  console.log("[Comprovantes] Envio recebido:", JSON.stringify({
+    transaction_id: body.transaction_id || body.id || null,
+    cpf:  body.cpf || body.customer_cpf || null,
+    nome: body.nome || body.customer_name || null,
+    filename: body.filename || null,
+  }));
 
   return jsonResponse(200, { success: true });
 };

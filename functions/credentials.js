@@ -17,10 +17,6 @@ module.exports = {
   GATEWAY_API_SECRET: process.env.GATEWAY_API_SECRET || "",
   GATEWAY_WEBHOOK_SECRET: process.env.GATEWAY_WEBHOOK_SECRET || "",
 
-  // Supabase
-  SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL || "",
-  SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY || "",
-
   // Serviços auxiliares
   UTMIFY_TOKEN: process.env.UTMIFY_TOKEN || "",
 

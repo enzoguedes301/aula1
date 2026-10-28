@@ -1,4 +1,3 @@
-const { getSupabase } = require("./lib/supabase");
 const { getGateway } = require("./lib/gateway-factory");
 const credentials = require("./credentials");
 
@@ -118,25 +117,31 @@ exports.handler = async (event) => {
   const paid = gatewayResponse.paid || false;
   const status = gatewayResponse.status || "pending";
 
-  try {
-    const supabase = getSupabase();
-    if (paid) {
-      const { data: txData } = await supabase
-        .from("transactions")
-        .select("status,customer_name,customer_email,customer_phone,customer_cpf,amount,created_at,utm_source,utm_campaign,utm_medium")
-        .eq("transaction_id", transactionId)
-        .single();
-      const alreadyPaid = txData?.status === "paid";
-      await supabase.from("transactions").update({
-        status: "paid",
-        paid_at: new Date().toISOString()
-      }).eq("transaction_id", transactionId);
-      if (!alreadyPaid && txData) await sendUtmifyPaid(txData, transactionId, gateway.name);
-    } else {
-      await supabase.from("transactions").update({ status }).eq("transaction_id", transactionId);
+  // Sem banco, o aviso de "pago" é montado com o que o próprio gateway
+  // devolveu na consulta — não há mais registro local para ler.
+  //
+  // ATENÇÃO: também não há como saber se este PIX já foi avisado antes. O
+  // funil consulta esta rota em laço enquanto a tela de pagamento está aberta,
+  // então um PIX pago dispara o evento a cada consulta. A deduplicação, agora,
+  // é por `orderId` do lado da UTMify.
+  if (paid) {
+    try {
+      const cliente = gatewayResponse.customer || {};
+      await sendUtmifyPaid(
+        {
+          amount: gatewayResponse.amount ?? null,
+          created_at: gatewayResponse.createdAt || null,
+          customer_name: cliente.name || null,
+          customer_email: cliente.email || null,
+          customer_phone: cliente.phone || null,
+          customer_cpf: cliente.document || cliente.cpf || null,
+        },
+        transactionId,
+        gateway.name
+      );
+    } catch (err) {
+      console.error("[UTMify] Erro ao avisar pagamento (continuando):", err.message);
     }
-  } catch (err) {
-    console.error("[Supabase] Erro ao atualizar status (continuando):", err.message);
   }
 
   return jsonResponse(200, {
