@@ -204,6 +204,44 @@
         body, body * {
             font-family: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif !important;
         }
+
+        /* Topo gov.br — arrumação do menu de 3 pontinhos.
+           Layout original (esquerda): [logo gov.br] [·pontinhos·] [| separador]
+           O ícone saía minúsculo e tudo ficava solto no vazio.
+
+           Queremos: [·pontinhos maiores·] [| separador] [logo gov.br]
+           com o separador colado na logo. O menu segue sem destino (decorativo).
+
+           O container da esquerda é flex; invertendo a ordem e reordenando os
+           itens, o botão vai para antes da logo e o separador fica no meio. */
+
+        /* A logo é o primeiro filho do bloco flex da esquerda. */
+        header > div:first-child { gap: 0; }
+
+        /* Botão dos 3 pontinhos: vai para a frente de tudo e cresce. */
+        header button[aria-label="Menu de links"] {
+            order: 1 !important;
+            margin: 0 16px 0 0 !important;   /* respiro só à direita */
+        }
+        header button[aria-label="Menu de links"] svg {
+            width: 0.5em !important;         /* pontinhos maiores (eram ~0.125em) */
+            height: 1.25em !important;
+        }
+        header button[aria-label="Menu de links"] i {
+            font-size: 22px !important;      /* aumenta o ícone inteiro */
+        }
+
+        /* Separador vertical: fica entre o menu e a logo, colado na logo. */
+        header button[aria-label="Menu de links"] + div[style*="border-left"] {
+            order: 2 !important;
+            margin: 0 12px 0 0 !important;   /* pequeno espaço até a logo */
+        }
+
+        /* A logo gov.br vai para o fim do grupo, sem a margem-direita antiga. */
+        header > div:first-child > img {
+            order: 3 !important;
+            margin-right: 0 !important;
+        }
     </style>
 
     <!-- Injeção de Checkboxes nos Nomes -->
