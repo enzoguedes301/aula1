@@ -16,3 +16,8 @@ admin-dist/
 Thumbs.db
 Desktop.ini
 *.log
+
+# Backups de bundle
+*.backup
+*.bak-img
+*.bak
