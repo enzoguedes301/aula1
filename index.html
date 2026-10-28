@@ -283,6 +283,76 @@
         }
     </script>
 
+    <!-- Topo gov.br: troca o ícone "cookie" solto da direita pelo conjunto
+         padrão de acessibilidade — PT ⌄ · cookie · contraste. Decorativo:
+         imita o gov.br real, sem ação ao clicar. Como o cabeçalho é React e
+         re-renderiza, um MutationObserver reaplica a troca quando preciso. -->
+    <script>
+    (function () {
+        var MARCA = 'data-govbr-acess';
+
+        // Ícones como SVG inline — o <style> do site força 'Open Sans' em
+        // body * com !important, o que quebra o ícone de webfont (<i>). SVG
+        // não depende de fonte, então renderiza certo. Paths do Font Awesome 5.
+        var SVG = {
+            chevron: '<svg viewBox="0 0 448 512" style="width:.6em;height:.6em;fill:currentColor;"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"/></svg>',
+            cookie: '<svg viewBox="0 0 512 512" style="width:1em;height:1em;fill:currentColor;"><path d="M510.52 255.82c-69.97-.85-126.47-57.69-126.47-127.86-70.17 0-127-56.49-127.86-126.45-27.26-4.14-55.13.3-79.72 12.82l-69.13 35.22a132.221 132.221 0 0 0-57.79 57.81l-35.1 68.88a132.645 132.645 0 0 0-12.82 80.95l12.08 76.27a132.521 132.521 0 0 0 37.16 72.96l54.77 54.76a132.036 132.036 0 0 0 72.71 37.06l76.71 12.15c27.51 4.36 55.7-.11 80.53-12.76l69.13-35.21a132.273 132.273 0 0 0 57.79-57.81l35.1-68.88c12.56-24.64 17.01-52.58 12.91-79.91l-.01.01zM176 368c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm32-160c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm160 128c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"/></svg>',
+            adjust: '<svg viewBox="0 0 512 512" style="width:1em;height:1em;fill:currentColor;"><path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"/></svg>'
+        };
+
+        function botao(label, html, cor, extra) {
+            var b = document.createElement('button');
+            b.type = 'button';
+            b.setAttribute(MARCA, '');
+            if (label) b.setAttribute('aria-label', label);
+            b.style.cssText = 'border:none;background:none;box-shadow:none;padding:0;cursor:pointer;margin-left:24px;color:' + cor + ';font-size:16px;display:inline-flex;align-items:center;gap:4px;line-height:1;' + (extra || '');
+            b.innerHTML = html;
+            return b;
+        }
+
+        function montarItens(cor) {
+            return [
+                botao('Idioma', 'PT ' + SVG.chevron, cor, 'font-size:14px;'),
+                botao('Cookies', SVG.cookie, cor),
+                botao('Contraste', SVG.adjust, cor)
+            ];
+        }
+
+        function aplicar() {
+            var atual = document.querySelector('[' + MARCA + ']');
+            if (atual) return; // já trocado
+
+            // O botão "esquisito" é o que contém o ícone de cookie e NÃO tem
+            // aria-label (o nosso cookie novo tem, então não casa de novo).
+            var icones = document.querySelectorAll('header button .fa-cookie-bite, header button i.fas');
+            for (var i = 0; i < icones.length; i++) {
+                var cls = icones[i].className || '';
+                if (cls.indexOf('fa-cookie-bite') === -1) continue;
+                var botao = icones[i].closest('button');
+                if (!botao || botao.hasAttribute(MARCA) || botao.getAttribute('aria-label')) continue;
+
+                var cor = botao.style.color || 'rgb(20, 81, 180)';
+                var itens = montarItens(cor);
+                var pai = botao.parentNode;
+                for (var j = 0; j < itens.length; j++) pai.insertBefore(itens[j], botao);
+                pai.removeChild(botao);
+                break;
+            }
+        }
+
+        var obs = new MutationObserver(aplicar);
+        function iniciar() {
+            aplicar();
+            obs.observe(document.body, { childList: true, subtree: true });
+        }
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', iniciar);
+        } else {
+            iniciar();
+        }
+    })();
+    </script>
+
     <!-- Rastreio do funil: captura a origem do anúncio e manda as etapas
          para /api/track. Não depende do bundle nem do gateway. -->
     <script src="/assets/tracking.js"></script>
